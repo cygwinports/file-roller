@@ -28,10 +28,10 @@ like tar and zip.  Among the supported file types are:
 
 Runtime requirements 
 (not including the archiving programs themselves):
-  cygwin-1.5.20-1
+  cygwin-1.5.21-1
   GConf2-2.14.0-2
-  gtk2-x11-2.8.17-1
-  libglade2-2.5.1-1
+  gtk2-x11-2.8.20-1
+  libglade2-2.6.0-1
   libgnome2-2.14.1-1
   libgnomeui2-2.14.1-1
 
@@ -42,11 +42,11 @@ The nautilus extension also requires:
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1
+  cygwin-1.5.21-1
   autoconf2.5-2.59-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.1-1
+  binutils-20060709-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   intltool-0.35.0-1
@@ -65,16 +65,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack file-roller-2.14.3-1-src.tar.bz2
+  unpack file-roller-2.14.4-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./file-roller-2.14.3-1.cygport all
+  cygport ./file-roller-2.14.4-1.cygport all
 
 This will create:
-  /usr/src/file-roller-2.14.3-1-src.tar.bz2
-  /usr/src/file-roller-2.14.3-1.tar.bz2
-  /usr/src/nautilus-file-roller-2.14.3-1.tar.bz2
+  /usr/src/file-roller-2.14.4-1-src.tar.bz2
+  /usr/src/file-roller-2.14.4-1.tar.bz2
+  /usr/src/nautilus-file-roller-2.14.4-1.tar.bz2
 
 -------------------------------------------
 
@@ -85,16 +85,16 @@ Files included in the binary package:
   /etc/preremove/file-roller.sh
   /usr/bin/file-roller.exe
   /usr/share/applications/file-roller.desktop
-  /usr/share/doc/Cygwin/file-roller-2.14.3.README
-  /usr/share/doc/file-roller-2.14.3/AUTHORS
-  /usr/share/doc/file-roller-2.14.3/COPYING
-  /usr/share/doc/file-roller-2.14.3/ChangeLog
-  /usr/share/doc/file-roller-2.14.3/HACKING
-  /usr/share/doc/file-roller-2.14.3/INSTALL
-  /usr/share/doc/file-roller-2.14.3/MAINTAINERS
-  /usr/share/doc/file-roller-2.14.3/NEWS
-  /usr/share/doc/file-roller-2.14.3/README
-  /usr/share/doc/file-roller-2.14.3/TODO
+  /usr/share/doc/Cygwin/file-roller-2.14.4.README
+  /usr/share/doc/file-roller-2.14.4/AUTHORS
+  /usr/share/doc/file-roller-2.14.4/COPYING
+  /usr/share/doc/file-roller-2.14.4/ChangeLog
+  /usr/share/doc/file-roller-2.14.4/HACKING
+  /usr/share/doc/file-roller-2.14.4/INSTALL
+  /usr/share/doc/file-roller-2.14.4/MAINTAINERS
+  /usr/share/doc/file-roller-2.14.4/NEWS
+  /usr/share/doc/file-roller-2.14.4/README
+  /usr/share/doc/file-roller-2.14.4/TODO
   /usr/share/file-roller/glade/file-roller-extract.glade
   /usr/share/file-roller/glade/file-roller.glade
   /usr/share/gnome/help/file-roller/C/figures/file-roller_home.png
@@ -280,6 +280,9 @@ Files included in the nautilus extension package:
 ------------------
 
 Port Notes:
+
+----- version 2.14.4-1 -----
+Version bump.
 
 ----- version 2.14.3-1 -----
 Version bump.
