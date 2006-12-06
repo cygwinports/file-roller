@@ -1,5 +1,6 @@
 category: Gnome
 requires: cygwin glib2 gnome-vfs2 file-roller nautilus
+external-source: file-roller
 sdesc: "Nautilus archive manager extension"
 ldesc: "File Roller is an archive manager for the GNOME environment.  This means
 that you can create and modify archives, view the content of an archive,
