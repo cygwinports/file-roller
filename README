@@ -28,10 +28,10 @@ like tar and zip.  Among the supported file types are:
 
 Runtime requirements 
 (not including the archiving programs themselves):
-  cygwin-1.5.22-1
+  cygwin-1.5.24-2
   GConf2-2.16.0-1
-  glib2-2.12.4-1
-  gtk2-x11-2.10.6-1
+  glib2-2.12.9-1
+  gtk2-x11-2.10.9-1
   libglade2-2.6.0-1
   libgnome2-2.16.0-1
   libgnomeui2-2.16.1-1
@@ -42,15 +42,15 @@ The nautilus extension also requires:
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.22-1
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.7-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  intltool-0.35.0-1
-  libtool1.5-1.5.23a-1
+  cygport-0.2.9-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  intltool-0.35.4-1
+  libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
   scrollkeeper-0.3.14-2
@@ -65,16 +65,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack file-roller-2.16.2-1-src.tar.bz2
+  unpack file-roller-2.16.3-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./file-roller-2.16.2-1.cygport all
+  cygport ./file-roller-2.16.3-1.cygport all
 
 This will create:
-  /usr/src/file-roller-2.16.2-1-src.tar.bz2
-  /usr/src/file-roller-2.16.2-1.tar.bz2
-  /usr/src/nautilus-file-roller-2.16.2-1.tar.bz2
+  /usr/src/file-roller-2.16.3-1-src.tar.bz2
+  /usr/src/file-roller-2.16.3-1.tar.bz2
+  /usr/src/nautilus-file-roller-2.16.3-1.tar.bz2
 
 -------------------------------------------
 
@@ -87,16 +87,16 @@ Files included in the binary package:
   /usr/lib/nautilus/extensions-1.0/cygnautilus-fileroller.dll
   /usr/lib/nautilus/extensions-1.0/libnautilus-fileroller.la
   /usr/share/applications/file-roller.desktop
-  /usr/share/doc/Cygwin/file-roller-2.16.2.README
-  /usr/share/doc/file-roller-2.16.2/AUTHORS
-  /usr/share/doc/file-roller-2.16.2/COPYING
-  /usr/share/doc/file-roller-2.16.2/ChangeLog
-  /usr/share/doc/file-roller-2.16.2/HACKING
-  /usr/share/doc/file-roller-2.16.2/INSTALL
-  /usr/share/doc/file-roller-2.16.2/MAINTAINERS
-  /usr/share/doc/file-roller-2.16.2/NEWS
-  /usr/share/doc/file-roller-2.16.2/README
-  /usr/share/doc/file-roller-2.16.2/TODO
+  /usr/share/doc/Cygwin/file-roller-2.16.3.README
+  /usr/share/doc/file-roller-2.16.3/AUTHORS
+  /usr/share/doc/file-roller-2.16.3/COPYING
+  /usr/share/doc/file-roller-2.16.3/ChangeLog
+  /usr/share/doc/file-roller-2.16.3/HACKING
+  /usr/share/doc/file-roller-2.16.3/INSTALL
+  /usr/share/doc/file-roller-2.16.3/MAINTAINERS
+  /usr/share/doc/file-roller-2.16.3/NEWS
+  /usr/share/doc/file-roller-2.16.3/README
+  /usr/share/doc/file-roller-2.16.3/TODO
   /usr/share/file-roller/glade/file-roller-extract.glade
   /usr/share/file-roller/glade/file-roller.glade
   /usr/share/gnome/help/file-roller/C/figures/file-roller_home.png
@@ -293,6 +293,9 @@ Files included in the nautilus extension package:
 ------------------
 
 Port Notes:
+
+----- version 2.16.3-1 -----
+Version bump.
 
 ----- version 2.16.2-1 -----
 Version bump for GNOME 2.16.
