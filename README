@@ -29,36 +29,35 @@ like tar and zip.  Among the supported file types are:
 Runtime requirements 
 (not including the archiving programs themselves):
   cygwin-1.5.24-2
-  GConf2-2.18.0.1-1
-  gdk-pixbuf2-2.10.13-1
-  glib2-2.12.12-2
-  gnome-vfs2-2.18.1-1
-  gtk2-x11-2.10.13-1
-  libglade2-2.6.1-1
-  libgnome2-2.18.0-1
-  libgnomeui2-2.18.1-1
+  GConf2-2.20.1-1
+  gdk-pixbuf2-2.12.2-1
+  glib2-2.14.4-1
+  gnome-vfs2-2.20.1-1
+  gtk2-x11-2.12.2-1
+  libglade2-2.6.2-1
+  libgnome2-2.20.1.1-1
+  libgnomeui2-2.20.1.1-1
   libintl8-0.15-1
-  pango-1.16.4-1
-
-The nautilus extension also requires:
-  nautilus-2.18.3-1
+  pango-1.18.3-1
+(nautilus-file-roller)
+  nautilus-2.20.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
+  automake1.10-1.10-1
   binutils-20060817-1
-  cygport-0.3.5-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  gnome-common-2.18.0-1
-  gnome-doc-utils-0.10.3-1
-  intltool-0.35.5-1
+  gnome-common-2.20.0-1
+  gnome-doc-utils-0.12.0-1
+  intltool-0.36.2-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
-  scrollkeeper-0.3.14-2
+  rarian-0.6.0-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -70,16 +69,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack file-roller-2.16.3-1-src.tar.bz2
+  unpack file-roller-2.20.2-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./file-roller-2.16.3-1.cygport all
+  cygport ./file-roller-2.20.2-1.cygport all
 
 This will create:
-  /usr/src/file-roller-2.16.3-1-src.tar.bz2
-  /usr/src/file-roller-2.16.3-1.tar.bz2
-  /usr/src/nautilus-file-roller-2.16.3-1.tar.bz2
+  /usr/src/file-roller-2.20.2-1-src.tar.bz2
+  /usr/src/file-roller-2.20.2-1.tar.bz2
+  /usr/src/nautilus-file-roller-2.20.2-1.tar.bz2
 
 -------------------------------------------
 
@@ -90,21 +89,25 @@ Files included in the binary packages:
   /etc/postinstall/file-roller.sh
   /etc/preremove/file-roller.sh
   /usr/bin/file-roller.exe
-  /usr/sbin/file-roller/isoinfo.sh
-  /usr/sbin/file-roller/move-here.sh
+  /usr/lib/file-roller/isoinfo.sh
   /usr/share/applications/file-roller.desktop
-  /usr/share/doc/Cygwin/file-roller-2.18.4.README
-  /usr/share/doc/file-roller-2.18.4/AUTHORS
-  /usr/share/doc/file-roller-2.18.4/COPYING
-  /usr/share/doc/file-roller-2.18.4/ChangeLog
-  /usr/share/doc/file-roller-2.18.4/HACKING
-  /usr/share/doc/file-roller-2.18.4/INSTALL
-  /usr/share/doc/file-roller-2.18.4/MAINTAINERS
-  /usr/share/doc/file-roller-2.18.4/NEWS
-  /usr/share/doc/file-roller-2.18.4/README
-  /usr/share/doc/file-roller-2.18.4/TODO
-  /usr/share/file-roller/glade/ask-password.glade
-  /usr/share/file-roller/glade/file-roller.glade
+  /usr/share/doc/Cygwin/file-roller-2.20.2.README
+  /usr/share/doc/file-roller-2.20.2/AUTHORS
+  /usr/share/doc/file-roller-2.20.2/COPYING
+  /usr/share/doc/file-roller-2.20.2/ChangeLog
+  /usr/share/doc/file-roller-2.20.2/HACKING
+  /usr/share/doc/file-roller-2.20.2/INSTALL
+  /usr/share/doc/file-roller-2.20.2/MAINTAINERS
+  /usr/share/doc/file-roller-2.20.2/NEWS
+  /usr/share/doc/file-roller-2.20.2/README
+  /usr/share/doc/file-roller-2.20.2/TODO
+  /usr/share/file-roller/glade/add-options.glade
+  /usr/share/file-roller/glade/batch-add-files.glade
+  /usr/share/file-roller/glade/batch-password.glade
+  /usr/share/file-roller/glade/delete.glade
+  /usr/share/file-roller/glade/open-with.glade
+  /usr/share/file-roller/glade/password.glade
+  /usr/share/file-roller/glade/properties.glade
   /usr/share/file-roller/icons/hicolor/16x16/actions/add-files-to-archive.png
   /usr/share/file-roller/icons/hicolor/16x16/actions/add-folder-to-archive.png
   /usr/share/file-roller/icons/hicolor/16x16/actions/extract-archive.png
@@ -155,6 +158,12 @@ Files included in the binary packages:
   /usr/share/gnome/help/file-roller/nl/figures/file-roller_rightarrow.png
   /usr/share/gnome/help/file-roller/nl/figures/file-roller_uparrow.png
   /usr/share/gnome/help/file-roller/nl/file-roller.xml
+  /usr/share/gnome/help/file-roller/oc/figures/file-roller_home.png
+  /usr/share/gnome/help/file-roller/oc/figures/file-roller_leftarrow.png
+  /usr/share/gnome/help/file-roller/oc/figures/file-roller_main_window.png
+  /usr/share/gnome/help/file-roller/oc/figures/file-roller_rightarrow.png
+  /usr/share/gnome/help/file-roller/oc/figures/file-roller_uparrow.png
+  /usr/share/gnome/help/file-roller/oc/file-roller.xml
   /usr/share/gnome/help/file-roller/ru/figures/file-roller_home.png
   /usr/share/gnome/help/file-roller/ru/figures/file-roller_leftarrow.png
   /usr/share/gnome/help/file-roller/ru/figures/file-roller_main_window.png
@@ -239,6 +248,7 @@ Files included in the binary packages:
   /usr/share/locale/ro/LC_MESSAGES/file-roller.mo
   /usr/share/locale/ru/LC_MESSAGES/file-roller.mo
   /usr/share/locale/rw/LC_MESSAGES/file-roller.mo
+  /usr/share/locale/si/LC_MESSAGES/file-roller.mo
   /usr/share/locale/sk/LC_MESSAGES/file-roller.mo
   /usr/share/locale/sl/LC_MESSAGES/file-roller.mo
   /usr/share/locale/sq/LC_MESSAGES/file-roller.mo
@@ -264,6 +274,7 @@ Files included in the binary packages:
   /usr/share/omf/file-roller/file-roller-fr.omf
   /usr/share/omf/file-roller/file-roller-it.omf
   /usr/share/omf/file-roller/file-roller-nl.omf
+  /usr/share/omf/file-roller/file-roller-oc.omf
   /usr/share/omf/file-roller/file-roller-ru.omf
   /usr/share/omf/file-roller/file-roller-sv.omf
   /usr/share/omf/file-roller/file-roller-uk.omf
@@ -276,8 +287,11 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.16.3-1 -----
-Version bump.
+----- version 2.20.2-1 -----
+Version bump for GNOME 2.20.
+
+----- version 2.18.4-1 -----
+Version bump for GNOME 2.18.
 
 ----- version 2.16.2-1 -----
 Version bump for GNOME 2.16.

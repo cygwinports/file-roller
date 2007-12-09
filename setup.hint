@@ -1,5 +1,5 @@
 category: Archive Gnome Utils
-requires: cygwin GConf2 glib2 gnome-vfs2 gtk2-x11 libglade2 libgnome2 libgnomeui2 libintl8 pango bzip2 cpio gzip p7zip rpm tar unzip zip
+requires: cygwin GConf2 glib2 gnome-vfs2 gtk2-x11 libglade2 libgnome2 libgnomeui2 libintl8 pango bzip2 cdrkit cpio gzip p7zip rpm tar unzip zip
 sdesc: "GNOME archive manager"
 ldesc: "File Roller is an archive manager for the GNOME environment.  This means
 that you can create and modify archives, view the content of an archive,
