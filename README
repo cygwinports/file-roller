@@ -12,6 +12,7 @@ like tar and zip.  Among the supported file types are:
       * bzip2 (.tar.bz2 , .tbz2)
       * compress (.tar.Z , .taz)
       * lzop (.tar.lzo , .tzo)
+      * lzma (.tar.lzma)
   * Zip archives (.zip)
   * Jar archives (.jar , .ear , .war)
   * Lha archives (.lzh)
@@ -28,36 +29,35 @@ like tar and zip.  Among the supported file types are:
 
 Runtime requirements 
 (not including the archiving programs themselves):
-  cygwin-1.5.24-2
-  GConf2-2.20.1-1
-  gdk-pixbuf2-2.12.2-1
-  glib2-2.14.4-1
-  gnome-vfs2-2.20.1-1
-  gtk2-x11-2.12.2-1
+  cygwin-1.5.25-11
+  GConf2-2.22.0-1
+  gdk-pixbuf2-2.12.9-1
+  glib2-2.16.3-1
+  gnome-vfs2-2.22.0-1
+  gtk2-x11-2.12.9-1
   libglade2-2.6.2-1
-  libgnome2-2.20.1.1-1
-  libgnomeui2-2.20.1.1-1
+  libgnome2-2.22.0-1
+  libgnomeui2-2.22.1-1
   libintl8-0.15-1
-  pango-1.18.3-1
+  pango-1.20.3-1
 (nautilus-file-roller)
-  nautilus-2.20.0-1
+  nautilus-2.22.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  automake1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-3
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-1
-  gnome-doc-utils-0.12.0-1
-  intltool-0.36.2-1
-  libtool1.5-1.5.23a-2
+  gnome-common-2.20.0-2
+  gnome-doc-utils-0.12.2-1
+  intltool-0.37.1-1
+  libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.21-1
-  rarian-0.6.0-1
+  rarian-0.8.0-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -69,16 +69,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack file-roller-2.20.2-1-src.tar.bz2
+  unpack file-roller-2.22.3-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./file-roller-2.20.2-1.cygport all
+  cygport ./file-roller-2.22.3-1.cygport all
 
 This will create:
-  /usr/src/file-roller-2.20.2-1-src.tar.bz2
-  /usr/src/file-roller-2.20.2-1.tar.bz2
-  /usr/src/nautilus-file-roller-2.20.2-1.tar.bz2
+  /usr/src/file-roller-2.22.3-1-src.tar.bz2
+  /usr/src/file-roller-2.22.3-1.tar.bz2
+  /usr/src/nautilus-file-roller-2.22.3-1.tar.bz2
 
 -------------------------------------------
 
@@ -91,16 +91,15 @@ Files included in the binary packages:
   /usr/bin/file-roller.exe
   /usr/lib/file-roller/isoinfo.sh
   /usr/share/applications/file-roller.desktop
-  /usr/share/doc/Cygwin/file-roller-2.20.2.README
-  /usr/share/doc/file-roller-2.20.2/AUTHORS
-  /usr/share/doc/file-roller-2.20.2/COPYING
-  /usr/share/doc/file-roller-2.20.2/ChangeLog
-  /usr/share/doc/file-roller-2.20.2/HACKING
-  /usr/share/doc/file-roller-2.20.2/INSTALL
-  /usr/share/doc/file-roller-2.20.2/MAINTAINERS
-  /usr/share/doc/file-roller-2.20.2/NEWS
-  /usr/share/doc/file-roller-2.20.2/README
-  /usr/share/doc/file-roller-2.20.2/TODO
+  /usr/share/doc/file-roller-2.22.3/AUTHORS
+  /usr/share/doc/file-roller-2.22.3/COPYING
+  /usr/share/doc/file-roller-2.22.3/ChangeLog
+  /usr/share/doc/file-roller-2.22.3/HACKING
+  /usr/share/doc/file-roller-2.22.3/INSTALL
+  /usr/share/doc/file-roller-2.22.3/MAINTAINERS
+  /usr/share/doc/file-roller-2.22.3/NEWS
+  /usr/share/doc/file-roller-2.22.3/README
+  /usr/share/doc/file-roller-2.22.3/TODO
   /usr/share/file-roller/glade/add-options.glade
   /usr/share/file-roller/glade/batch-add-files.glade
   /usr/share/file-roller/glade/batch-password.glade
@@ -108,6 +107,7 @@ Files included in the binary packages:
   /usr/share/file-roller/glade/open-with.glade
   /usr/share/file-roller/glade/password.glade
   /usr/share/file-roller/glade/properties.glade
+  /usr/share/file-roller/glade/update.glade
   /usr/share/file-roller/icons/hicolor/16x16/actions/add-files-to-archive.png
   /usr/share/file-roller/icons/hicolor/16x16/actions/add-folder-to-archive.png
   /usr/share/file-roller/icons/hicolor/16x16/actions/extract-archive.png
@@ -184,10 +184,12 @@ Files included in the binary packages:
   /usr/share/gnome/help/file-roller/uk/file-roller.xml
   /usr/share/icons/hicolor/16x16/apps/file-roller.png
   /usr/share/icons/hicolor/22x22/apps/file-roller.png
+  /usr/share/icons/hicolor/24x24/apps/file-roller.png
   /usr/share/icons/hicolor/32x32/apps/file-roller.png
   /usr/share/icons/hicolor/scalable/apps/file-roller.svg
   /usr/share/locale/am/LC_MESSAGES/file-roller.mo
   /usr/share/locale/ar/LC_MESSAGES/file-roller.mo
+  /usr/share/locale/as/LC_MESSAGES/file-roller.mo
   /usr/share/locale/az/LC_MESSAGES/file-roller.mo
   /usr/share/locale/be/LC_MESSAGES/file-roller.mo
   /usr/share/locale/be@latin/LC_MESSAGES/file-roller.mo
@@ -262,6 +264,8 @@ Files included in the binary packages:
   /usr/share/locale/tk/LC_MESSAGES/file-roller.mo
   /usr/share/locale/tr/LC_MESSAGES/file-roller.mo
   /usr/share/locale/uk/LC_MESSAGES/file-roller.mo
+  /usr/share/locale/ur/LC_MESSAGES/file-roller.mo
+  /usr/share/locale/ur_PK/LC_MESSAGES/file-roller.mo
   /usr/share/locale/vi/LC_MESSAGES/file-roller.mo
   /usr/share/locale/xh/LC_MESSAGES/file-roller.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/file-roller.mo
@@ -286,6 +290,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.22.3-1 -----
+Version bump for GNOME 2.22.
 
 ----- version 2.20.2-1 -----
 Version bump for GNOME 2.20.
