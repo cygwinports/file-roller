@@ -29,26 +29,26 @@ like tar and zip.  Among the supported file types are:
 
 Runtime requirements 
 (not including the archiving programs themselves):
-  cygwin-1.5.25-11
+  cygwin-1.5.25-15
   GConf2-2.22.0-1
-  gdk-pixbuf2-2.12.9-1
+  gdk-pixbuf2-2.12.10-1
   glib2-2.16.3-1
   gnome-vfs2-2.22.0-1
-  gtk2-x11-2.12.9-1
+  gtk2-x11-2.12.10-1
   libglade2-2.6.2-1
   libgnome2-2.22.0-1
   libgnomeui2-2.22.1-1
   libintl8-0.15-1
   pango-1.20.3-1
 (nautilus-file-roller)
-  nautilus-2.22.0-1
+  nautilus-2.22.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.61-1
   automake1.10-1.10.1-1
   binutils-20080523-1
-  cygport-0.3.11-1
+  cygport-0.3.12-1
   gawk-3.1.6-3
   gcc-core-3.4.4-3
   gnome-common-2.20.0-2
@@ -56,7 +56,7 @@ Build requirements:
   intltool-0.37.1-1
   libtool-2.2.2-2
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   rarian-0.8.0-1
   sed-4.1.5-2
 
@@ -69,16 +69,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack file-roller-2.22.3-1-src.tar.bz2
+  unpack file-roller-2.22.4-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./file-roller-2.22.3-1.cygport all
+  cygport ./file-roller-2.22.4-1.cygport all
 
 This will create:
-  /usr/src/file-roller-2.22.3-1-src.tar.bz2
-  /usr/src/file-roller-2.22.3-1.tar.bz2
-  /usr/src/nautilus-file-roller-2.22.3-1.tar.bz2
+  /usr/src/file-roller-2.22.4-1-src.tar.bz2
+  /usr/src/file-roller-2.22.4-1.tar.bz2
+  /usr/src/nautilus-file-roller-2.22.4-1.tar.bz2
 
 -------------------------------------------
 
@@ -91,15 +91,15 @@ Files included in the binary packages:
   /usr/bin/file-roller.exe
   /usr/lib/file-roller/isoinfo.sh
   /usr/share/applications/file-roller.desktop
-  /usr/share/doc/file-roller-2.22.3/AUTHORS
-  /usr/share/doc/file-roller-2.22.3/COPYING
-  /usr/share/doc/file-roller-2.22.3/ChangeLog
-  /usr/share/doc/file-roller-2.22.3/HACKING
-  /usr/share/doc/file-roller-2.22.3/INSTALL
-  /usr/share/doc/file-roller-2.22.3/MAINTAINERS
-  /usr/share/doc/file-roller-2.22.3/NEWS
-  /usr/share/doc/file-roller-2.22.3/README
-  /usr/share/doc/file-roller-2.22.3/TODO
+  /usr/share/doc/file-roller-2.22.4/AUTHORS
+  /usr/share/doc/file-roller-2.22.4/COPYING
+  /usr/share/doc/file-roller-2.22.4/ChangeLog
+  /usr/share/doc/file-roller-2.22.4/HACKING
+  /usr/share/doc/file-roller-2.22.4/INSTALL
+  /usr/share/doc/file-roller-2.22.4/MAINTAINERS
+  /usr/share/doc/file-roller-2.22.4/NEWS
+  /usr/share/doc/file-roller-2.22.4/README
+  /usr/share/doc/file-roller-2.22.4/TODO
   /usr/share/file-roller/glade/add-options.glade
   /usr/share/file-roller/glade/batch-add-files.glade
   /usr/share/file-roller/glade/batch-password.glade
@@ -284,12 +284,15 @@ Files included in the binary packages:
   /usr/share/omf/file-roller/file-roller-uk.omf
 
 (nautilus-file-roller)
-  /usr/lib/nautilus/extensions-1.0/cygnautilus-fileroller.dll
-  /usr/lib/nautilus/extensions-1.0/libnautilus-fileroller.la
+  /usr/lib/nautilus/extensions-2.0/cygnautilus-fileroller.dll
+  /usr/lib/nautilus/extensions-2.0/libnautilus-fileroller.la
 
 ------------------
 
 Port Notes:
+
+----- version 2.22.4-1 -----
+Version bump.
 
 ----- version 2.22.3-1 -----
 Version bump for GNOME 2.22.

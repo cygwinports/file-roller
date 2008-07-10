@@ -1,0 +1,12 @@
+inherit gnome2
+
+DESCRIPTION="GNOME archive manager"
+
+PKG_NAMES="${PN} nautilus-${PN}"
+PKG_HINTS="setup nautilus"
+PKG_CONTENTS[0]='--exclude=usr/lib/nautilus etc/ usr/'
+PKG_CONTENTS[1]='usr/lib/nautilus/'
+
+DIFF_EXCLUDES="fr-marshal.h"
+
+CYGCONF_ARGS="--libexecdir=/usr/lib"
