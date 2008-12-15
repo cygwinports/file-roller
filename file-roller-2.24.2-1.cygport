@@ -3,9 +3,8 @@ inherit gnome2
 DESCRIPTION="GNOME archive manager"
 
 PKG_NAMES="${PN} nautilus-${PN}"
-PKG_HINTS="setup nautilus"
-PKG_CONTENTS[0]='--exclude=usr/lib/nautilus etc/ usr/'
-PKG_CONTENTS[1]='usr/lib/nautilus/'
+file_roller_CONTENTS='--exclude=usr/lib/nautilus etc/ usr/'
+nautilus_file_roller_CONTENTS='usr/lib/nautilus/'
 
 DIFF_EXCLUDES="fr-marshal.h"
 
