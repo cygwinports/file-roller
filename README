@@ -10,14 +10,14 @@ like tar and zip.
 Runtime requirements 
   cygwin-1.5.25-15
   libgconf2_4-2.24.0-1
-  libgdk_pixbuf2.0_0-2.14.5-1
+  libgdk_pixbuf2.0_0-2.14.7-1
   libglade2.0_0-2.6.3-2
-  libglib2.0_0-2.18.3-1
+  libglib2.0_0-2.18.4-1
   libgnome2_0-2.24.1-1
   libgnomeui2_0-2.24.0-1
-  libgtk2.0_0-2.14.5-1
+  libgtk2.0_0-2.14.7-1
   libintl8-0.17-2
-  libpango1.0_0-1.22.3-1
+  libpango1.0_0-1.22.4-1
   binutils
   bzip2
   coreutils
@@ -65,16 +65,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack file-roller-2.24.2-1-src.tar.bz2
+  unpack file-roller-2.24.3-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./file-roller-2.24.2-1.cygport all
+  cygport ./file-roller-2.24.3-1.cygport all
 
 This will create:
-  /usr/src/file-roller-2.24.2-1-src.tar.bz2
-  /usr/src/file-roller-2.24.2-1.tar.bz2
-  /usr/src/nautilus-file-roller-2.24.2-1.tar.bz2
+  /usr/src/file-roller-2.24.3-1-src.tar.bz2
+  /usr/src/file-roller-2.24.3-1.tar.bz2
+  /usr/src/nautilus-file-roller-2.24.3-1.tar.bz2
 
 -------------------------------------------
 
@@ -87,15 +87,15 @@ Files included in the binary packages:
   /usr/bin/file-roller.exe
   /usr/lib/file-roller/isoinfo.sh
   /usr/share/applications/file-roller.desktop
-  /usr/share/doc/file-roller-2.24.2/AUTHORS
-  /usr/share/doc/file-roller-2.24.2/COPYING
-  /usr/share/doc/file-roller-2.24.2/ChangeLog
-  /usr/share/doc/file-roller-2.24.2/HACKING
-  /usr/share/doc/file-roller-2.24.2/INSTALL
-  /usr/share/doc/file-roller-2.24.2/MAINTAINERS
-  /usr/share/doc/file-roller-2.24.2/NEWS
-  /usr/share/doc/file-roller-2.24.2/README
-  /usr/share/doc/file-roller-2.24.2/TODO
+  /usr/share/doc/file-roller-2.24.3/AUTHORS
+  /usr/share/doc/file-roller-2.24.3/COPYING
+  /usr/share/doc/file-roller-2.24.3/ChangeLog
+  /usr/share/doc/file-roller-2.24.3/HACKING
+  /usr/share/doc/file-roller-2.24.3/INSTALL
+  /usr/share/doc/file-roller-2.24.3/MAINTAINERS
+  /usr/share/doc/file-roller-2.24.3/NEWS
+  /usr/share/doc/file-roller-2.24.3/README
+  /usr/share/doc/file-roller-2.24.3/TODO
   /usr/share/file-roller/glade/add-options.glade
   /usr/share/file-roller/glade/batch-add-files.glade
   /usr/share/file-roller/glade/batch-password.glade
@@ -310,6 +310,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.24.3-1 -----
+Version bump.
 
 ----- version 2.24.2-1 -----
 Version bump for GNOME 2.24.
