@@ -8,16 +8,14 @@ File Roller is only a front-end (a graphical interface) to archiving programs
 like tar and zip.
 
 Runtime requirements 
-  cygwin-1.5.25-15
-  libgconf2_4-2.24.0-1
-  libgdk_pixbuf2.0_0-2.14.7-1
-  libglade2.0_0-2.6.3-2
-  libglib2.0_0-2.18.4-1
-  libgnome2_0-2.24.1-1
-  libgnomeui2_0-2.24.0-1
-  libgtk2.0_0-2.14.7-1
-  libintl8-0.17-2
-  libpango1.0_0-1.22.4-1
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libgconf2_4-2.26.0-1
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libintl8-0.17-10
+  libpango1.0_0-1.24.0-1
   binutils
   bzip2
   coreutils
@@ -37,23 +35,23 @@ Runtime requirements
   zip
   zoo
 (nautilus-file-roller)
-  nautilus-2.24.2-1
+  nautilus-2.26.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  gnome-doc-utils-0.14.0-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
+  gnome-doc-utils-0.16.0-1
+  intltool-0.40.6-1
+  libtool-2.2.7a-12
+  make-3.81-2
   pkg-config-0.23a-2
-  rarian-0.8.1-1
+  rarian-0.8.1-10
   sed-4.1.5-2
 
 Canonical homepage:
@@ -65,16 +63,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack file-roller-2.24.3-1-src.tar.bz2
+  unpack file-roller-2.26.0-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./file-roller-2.24.3-1.cygport all
+  cygport ./file-roller-2.26.0-1.cygport all
 
 This will create:
-  /usr/src/file-roller-2.24.3-1-src.tar.bz2
-  /usr/src/file-roller-2.24.3-1.tar.bz2
-  /usr/src/nautilus-file-roller-2.24.3-1.tar.bz2
+  /usr/src/file-roller-2.26.0-1-src.tar.bz2
+  /usr/src/file-roller-2.26.0-1.tar.bz2
+  /usr/src/nautilus-file-roller-2.26.0-1.tar.bz2
 
 -------------------------------------------
 
@@ -87,30 +85,29 @@ Files included in the binary packages:
   /usr/bin/file-roller.exe
   /usr/lib/file-roller/isoinfo.sh
   /usr/share/applications/file-roller.desktop
-  /usr/share/doc/file-roller-2.24.3/AUTHORS
-  /usr/share/doc/file-roller-2.24.3/COPYING
-  /usr/share/doc/file-roller-2.24.3/ChangeLog
-  /usr/share/doc/file-roller-2.24.3/HACKING
-  /usr/share/doc/file-roller-2.24.3/INSTALL
-  /usr/share/doc/file-roller-2.24.3/MAINTAINERS
-  /usr/share/doc/file-roller-2.24.3/NEWS
-  /usr/share/doc/file-roller-2.24.3/README
-  /usr/share/doc/file-roller-2.24.3/TODO
-  /usr/share/file-roller/glade/add-options.glade
-  /usr/share/file-roller/glade/batch-add-files.glade
-  /usr/share/file-roller/glade/batch-password.glade
-  /usr/share/file-roller/glade/delete.glade
-  /usr/share/file-roller/glade/new.glade
-  /usr/share/file-roller/glade/open-with.glade
-  /usr/share/file-roller/glade/password.glade
-  /usr/share/file-roller/glade/properties.glade
-  /usr/share/file-roller/glade/update.glade
+  /usr/share/doc/file-roller/AUTHORS
+  /usr/share/doc/file-roller/COPYING
+  /usr/share/doc/file-roller/ChangeLog
+  /usr/share/doc/file-roller/HACKING
+  /usr/share/doc/file-roller/MAINTAINERS
+  /usr/share/doc/file-roller/NEWS
+  /usr/share/doc/file-roller/README
+  /usr/share/doc/file-roller/TODO
   /usr/share/file-roller/icons/hicolor/16x16/actions/add-files-to-archive.png
   /usr/share/file-roller/icons/hicolor/16x16/actions/add-folder-to-archive.png
   /usr/share/file-roller/icons/hicolor/16x16/actions/extract-archive.png
   /usr/share/file-roller/icons/hicolor/24x24/actions/add-files-to-archive.png
   /usr/share/file-roller/icons/hicolor/24x24/actions/add-folder-to-archive.png
   /usr/share/file-roller/icons/hicolor/24x24/actions/extract-archive.png
+  /usr/share/file-roller/ui/add-options.ui
+  /usr/share/file-roller/ui/batch-add-files.ui
+  /usr/share/file-roller/ui/batch-password.ui
+  /usr/share/file-roller/ui/delete.ui
+  /usr/share/file-roller/ui/new.ui
+  /usr/share/file-roller/ui/open-with.ui
+  /usr/share/file-roller/ui/password.ui
+  /usr/share/file-roller/ui/properties.ui
+  /usr/share/file-roller/ui/update.ui
   /usr/share/gnome/help/file-roller/C/figures/file-roller_home.png
   /usr/share/gnome/help/file-roller/C/figures/file-roller_leftarrow.png
   /usr/share/gnome/help/file-roller/C/figures/file-roller_main_window.png
@@ -136,6 +133,12 @@ Files included in the binary packages:
   /usr/share/gnome/help/file-roller/de/figures/file-roller_rightarrow.png
   /usr/share/gnome/help/file-roller/de/figures/file-roller_uparrow.png
   /usr/share/gnome/help/file-roller/de/file-roller.xml
+  /usr/share/gnome/help/file-roller/en_GB/figures/file-roller_home.png
+  /usr/share/gnome/help/file-roller/en_GB/figures/file-roller_leftarrow.png
+  /usr/share/gnome/help/file-roller/en_GB/figures/file-roller_main_window.png
+  /usr/share/gnome/help/file-roller/en_GB/figures/file-roller_rightarrow.png
+  /usr/share/gnome/help/file-roller/en_GB/figures/file-roller_uparrow.png
+  /usr/share/gnome/help/file-roller/en_GB/file-roller.xml
   /usr/share/gnome/help/file-roller/es/figures/file-roller_home.png
   /usr/share/gnome/help/file-roller/es/figures/file-roller_leftarrow.png
   /usr/share/gnome/help/file-roller/es/figures/file-roller_main_window.png
@@ -205,6 +208,7 @@ Files included in the binary packages:
   /usr/share/locale/am/LC_MESSAGES/file-roller.mo
   /usr/share/locale/ar/LC_MESSAGES/file-roller.mo
   /usr/share/locale/as/LC_MESSAGES/file-roller.mo
+  /usr/share/locale/ast/LC_MESSAGES/file-roller.mo
   /usr/share/locale/az/LC_MESSAGES/file-roller.mo
   /usr/share/locale/be/LC_MESSAGES/file-roller.mo
   /usr/share/locale/be@latin/LC_MESSAGES/file-roller.mo
@@ -247,6 +251,7 @@ Files included in the binary packages:
   /usr/share/locale/ku/LC_MESSAGES/file-roller.mo
   /usr/share/locale/lt/LC_MESSAGES/file-roller.mo
   /usr/share/locale/lv/LC_MESSAGES/file-roller.mo
+  /usr/share/locale/mai/LC_MESSAGES/file-roller.mo
   /usr/share/locale/mg/LC_MESSAGES/file-roller.mo
   /usr/share/locale/mk/LC_MESSAGES/file-roller.mo
   /usr/share/locale/ml/LC_MESSAGES/file-roller.mo
@@ -292,6 +297,7 @@ Files included in the binary packages:
   /usr/share/omf/file-roller/file-roller-bg.omf
   /usr/share/omf/file-roller/file-roller-ca.omf
   /usr/share/omf/file-roller/file-roller-de.omf
+  /usr/share/omf/file-roller/file-roller-en_GB.omf
   /usr/share/omf/file-roller/file-roller-es.omf
   /usr/share/omf/file-roller/file-roller-fi.omf
   /usr/share/omf/file-roller/file-roller-fr.omf
@@ -311,51 +317,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.24.3-1 -----
-Version bump.
-
------ version 2.24.2-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.22.4-1 -----
-Version bump.
-
------ version 2.22.3-1 -----
-Version bump for GNOME 2.22.
-
------ version 2.20.2-1 -----
-Version bump for GNOME 2.20.
-
------ version 2.18.4-1 -----
-Version bump for GNOME 2.18.
-
------ version 2.16.2-1 -----
-Version bump for GNOME 2.16.
-
------ version 2.14.4-1 -----
-Version bump.
-
------ version 2.14.3-1 -----
-Version bump.
-
------ version 2.14.2-1 -----
-Version bump for GNOME 2.14.
-Bonobo component removed upstream.
-Nautilus extension now in separate package.
-
------ version 2.12.3-1 -----
-Version bump.
-
------ version 2.12.2-1 -----
-Version bump for GNOME 2.12.
-
------ version 2.10.4-1 -----
-Version bump for GNOME 2.10; now includes 7z support (via p7zip).
-
------ version 2.8.3-1 -----
-Initial release for Cygwin. 
-Patched to include a mkdtemp function borrowed from the
-nautilus-cd-burner source.
+----- version 2.26.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
