@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin file-roller libgcc1 libglib2.0_0 libintl8 nautilus
+requires: file-roller libgcc1 libglib2.0_0 libintl8 nautilus
 external-source: file-roller
 sdesc: "Nautilus archive manager extension"
 ldesc: "File Roller is an archive manager for the GNOME environment.  This means
