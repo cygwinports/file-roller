@@ -6,6 +6,7 @@ PKG_NAMES="${PN} nautilus-${PN}"
 file_roller_CONTENTS='--exclude=usr/lib/nautilus etc/ usr/'
 nautilus_file_roller_CONTENTS='usr/lib/nautilus/'
 
+DISTCLEANFILES="src/fr-enum-types.*"
 DIFF_EXCLUDES="fr-marshal.h"
 
 CYGCONF_ARGS="--libexecdir=/usr/lib"
