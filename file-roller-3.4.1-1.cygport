@@ -9,4 +9,6 @@ nautilus_file_roller_CONTENTS='usr/lib/nautilus/'
 DISTCLEANFILES="src/fr-enum-types.*"
 DIFF_EXCLUDES="fr-marshal.h"
 
-CYGCONF_ARGS="--libexecdir=/usr/lib"
+CYGCONF_ARGS="--libexecdir=/usr/lib/${PN}"
+
+KEEP_LA_FILES="none"
