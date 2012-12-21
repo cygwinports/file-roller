@@ -1,9 +1,0 @@
-category: Archive Gnome Utils
-requires: libcairo2 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk3_0 libintl8 libpango1.0_0 binutils bzip2 coreutils cpio genisoimage gzip lha lrzip lzip lzop p7zip rpm rzip tar unace unalz unzip xz zip zoo
-sdesc: "GNOME archive manager"
-ldesc: "File Roller is an archive manager for the GNOME environment.  This means
-that you can create and modify archives, view the content of an archive,
-view a file contained in the archive, extract files from the archive.
-
-File Roller is only a front-end (a graphical interface) to archiving programs
-like tar and zip."
