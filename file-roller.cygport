@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="file-roller"
-VERSION=3.8.3
+VERSION=3.8.4
 RELEASE=1
 CATEGORY="Archive GNOME"
 SUMMARY="GNOME archive manager"
@@ -20,3 +20,5 @@ nautilus_file_roller_CONTENTS='usr/lib/nautilus/'
 
 DISTCLEANFILES="src/fr-enum-types.*"
 DIFF_EXCLUDES="fr-marshal.h"
+
+CYGCONF_ARGS="--with-smclient=xsmp"
