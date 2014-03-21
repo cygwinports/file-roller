@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="file-roller"
-VERSION=3.8.4
+VERSION=3.10.2.1
 RELEASE=1
 CATEGORY="Archive GNOME"
 SUMMARY="GNOME archive manager"
