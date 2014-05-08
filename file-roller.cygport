@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="file-roller"
 VERSION=3.10.2.1
-RELEASE=1
+RELEASE=2
 CATEGORY="Archive GNOME"
 SUMMARY="GNOME archive manager"
 DESCRIPTION="File Roller is an archive manager for the GNOME environment.  This
@@ -10,6 +10,10 @@ means that you can create and modify archives, view the content of an archive,
 view a file contained in the archive, extract files from the archive. File
 Roller is only a front-end (a graphical interface) to archiving programs like
 tar and zip."
+
+if defined ARCH_i686; then
+PATCH_URI="3.10-libarchive-compat.patch"
+fi
 
 PKG_NAMES="${NAME} nautilus-${NAME}"
 file_roller_REQUIRES="binutils bzip2 coreutils cpio genisoimage gzip lha lrzip \
