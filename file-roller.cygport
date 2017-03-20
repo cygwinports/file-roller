@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="file-roller"
-VERSION=3.16.4
+VERSION=3.22.3
 RELEASE=1
 CATEGORY="Archive GNOME"
 SUMMARY="GNOME archive manager"
@@ -11,12 +11,10 @@ view a file contained in the archive, extract files from the archive. File
 Roller is only a front-end (a graphical interface) to archiving programs like
 tar and zip."
 
-PKG_NAMES="${NAME} nautilus-${NAME}"
+file_roller_OBSOLETES="nautilus-${NAME}"
 file_roller_REQUIRES="binutils bzip2 coreutils cpio genisoimage gzip lrzip \
     lzip lzop p7zip rpm rzip tar unace unalz unzip xz zip zoo"
 file_roller_CONTENTS='--exclude=usr/lib/nautilus etc/ usr/'
-nautilus_file_roller_REQUIRES=${NAME}
-nautilus_file_roller_CONTENTS='usr/lib/nautilus/'
 
 DISTCLEANFILES="src/fr-enum-types.*"
 DIFF_EXCLUDES="fr-marshal.h"
